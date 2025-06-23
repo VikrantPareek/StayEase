@@ -1,0 +1,29 @@
+<%layout("./layouts/boilerplate")%>
+<div class="col-6 offset-3 mt-3">
+  <h1>Login for StayEase</h1>
+  <form action="/login" method="post" class="needs-validation mt-3" novalidate>
+    <div>
+      <label for="username" class="form-label mt-3">Username</label>
+      <input
+        type="text"
+        class="form-control"
+        name="username"
+        id="username"
+        required
+      />
+      <div class="invalid-feedback">Username is required</div>
+    </div>
+    <div>
+      <label for="password" class="form-label mt-3">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        id="password"
+        required
+      />
+      <div class="invalid-feedback">Password is required</div>
+    </div>
+    <button class="btn btn-success mt-3">Login</button>
+  </form>
+</div>

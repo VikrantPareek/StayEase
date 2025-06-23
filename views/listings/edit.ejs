@@ -1,0 +1,92 @@
+<%layout(". /layouts/boilerplate")%>
+
+<body>
+  <div class="col-6 offset-3 mt-3">
+    <h1>Edit Your Listing</h1>
+    <form
+      action="/listings/<%=listing.id%>?_method=PUT"
+      class="needs-validation"
+      novalidate
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <div>
+        <label class="form-label mt-2" for="title">Title</label>
+        <input
+          class="form-control"
+          type="text"
+          id="title"
+          name="title"
+          value="<%=listing.title%>"
+          required
+        />
+        <div class="invalid-feedback">Title is required</div>
+      </div>
+      <div>
+        <label class="form-label mt-2" for="description">Description</label>
+        <textarea
+          class="form-control"
+          name="description"
+          id="description"
+          required
+        >
+<%=listing.description%></textarea
+        >
+        <div class="invalid-feedback">Description is required</div>
+      </div>
+      <div>
+        <p class="mt-2">Orignal Image</p>
+        <img
+          src="<%=listing.image.url%>"
+          alt="original-image"
+          class="rounded-3"
+          height="200px"
+        />
+      </div>
+      <div>
+        <label class="form-label mt-2" for="image">Upload Image</label>
+        <input class="form-control" type="file" name="image" id="image" />
+        <div class="invalid-feedback">Image is required</div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label class="form-label mt-2" for="price">Price</label>
+          <input
+            class="form-control"
+            type="number"
+            name="price"
+            id="price"
+            value="<%=listing.price%>"
+            required
+          />
+          <div class="invalid-feedback">Price can't be empty</div>
+        </div>
+        <div class="col-8">
+          <label class="form-label mt-2" for="location">Location</label>
+          <input
+            class="form-control"
+            type="text"
+            name="location"
+            id="location"
+            value="<%=listing.location%>"
+            required
+          />
+          <div class="invalid-feedback">Location is required</div>
+        </div>
+      </div>
+      <div>
+        <label class="form-label mt-2" for="country">Country</label>
+        <input
+          class="form-control"
+          type="text"
+          name="country"
+          id="country"
+          value="<%=listing.country%>"
+          required
+        />
+        <div class="invalid-feedback">Country can't be empty</div>
+      </div>
+      <button class="btn btn-dark mt-3 mb-3">Add</button>
+    </form>
+  </div>
+</body>

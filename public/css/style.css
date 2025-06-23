@@ -1,0 +1,153 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+/* Navbar */
+.navbar {
+  height: 4.75rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: red;
+  font-size: 2.5rem;
+}
+
+.nav-link {
+  color: black;
+  font-size: 1.25rem;
+}
+
+.nav-bold {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.667);
+}
+
+.btn-search {
+  background-color: red;
+  color: white;
+}
+
+.btn-search:hover {
+  background-color: red;
+  color: white;
+}
+
+.btn-search i {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+}
+
+.filter {
+  margin-top: 1.25rem;
+  margin-right: 1.75rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.tax-toggle {
+  margin-top: 1.3rem;
+  margin-left: 4rem;
+  border: 1px solid black;
+  height: 3rem;
+  padding: 0.65rem 0.75rem 0 0.75rem;
+}
+
+.form-check-label {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.667);
+}
+
+.taxes {
+  display: none;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  height: 7rem;
+  background-color: #b5b4b46d;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-socials {
+  padding-top: 1rem;
+  height: 2rem;
+  width: 100vw;
+}
+
+.footer-socials i {
+  font-size: 1.35rem;
+  margin-left: 0.5rem;
+}
+
+.footer-brand {
+  width: 100vw;
+  height: 1rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.footer-conditions {
+  width: 100vw;
+  height: 2rem;
+}
+
+.footer-conditions a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-conditions a:hover {
+  text-decoration: underline;
+}
+
+/* Index Page */
+.listing-card {
+  border: none;
+  margin-bottom: 1.25rem;
+}
+
+.listing-image {
+  border-radius: 1rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.listing-text-body {
+  padding: 0;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+/* Button */
+.red-button {
+  background-color: red;
+  border: none;
+}
