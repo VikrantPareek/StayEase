@@ -80,6 +80,10 @@ body {
   font-weight: 600;
 }
 
+.menu {
+  display: none;
+}
+
 @media (min-width: 985px) and (max-width: 1235px) {
   .tax-toggle {
     margin-left: 0 !important;
