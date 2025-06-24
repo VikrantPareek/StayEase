@@ -27,23 +27,21 @@ let taxSwitch = document.getElementById("switchCheckDefault");
 taxSwitch.addEventListener("click", () => {
   let taxInfo = document.getElementsByClassName("taxes");
   for (info of taxInfo) {
-    if(info.style.display !== "inline"){
-    info.style.display = "inline";
-    }else{
-      info.style.display = "none"
+    if (info.style.display !== "inline") {
+      info.style.display = "inline";
+    } else {
+      info.style.display = "none";
     }
   }
 });
-// taxSwitch.addEventListener("click", () => {
-//   let body = document.querySelector("body");
-//   if(body.style.backgroundColor !== "black"){
-//   body.style.backgroundColor = "black";
-//   }else {
-//      body.style.backgroundColor = "white"
-//   }
-//   if(body.style.color !== "white"){
-//   body.style.color = "white";
-//   }else{
-//     body.style.color = "black";
-//   }
-// });
+
+const btn = document.getElementsByClassName("menu")[0];
+btn.addEventListener("click", () => {
+  const div = document.getElementsByClassName("filters")[0];
+  const filter = document.getElementsByClassName("mt-5")[0];
+  if (div.style.display === "none") {
+    div.style.display = "flex";
+  } else {
+    div.style.display = "none";
+  }
+});

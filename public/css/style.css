@@ -79,6 +79,33 @@ body {
   font-weight: 600;
 }
 
+@media (min-width: 985px) and (max-width: 1235px) {
+  .tax-toggle {
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 513px) and (max-width: 619px) {
+  .tax-toggle {
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 369px) and (max-width: 441px) {
+  .tax-toggle {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .menu {
+    display: block;
+  }
+  .filters {
+    display: none;
+  }
+}
+
 /* Footer */
 .footer {
   height: 7rem;
