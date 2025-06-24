@@ -175,11 +175,11 @@ body {
 }
 
 @media (max-width: 768px) {
-  .show-listing-img {
-    width: 5rem;
+  .show-listing-div {
+    width: 10rem;
   }
-  .card-img-top {
-    height: 5rem;
+  .show-listing-img {
+    height: 10rem;
   }
 }
 
