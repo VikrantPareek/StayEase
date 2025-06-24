@@ -44,6 +44,12 @@ body {
   margin-right: 0.5rem;
 }
 
+@media (min-width: 0px) and (max-width: 768px) {
+  .nav-expansion {
+    height: auto;
+  }
+}
+
 /* Filters */
 .filters {
   display: flex;
