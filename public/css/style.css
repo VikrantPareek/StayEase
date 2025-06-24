@@ -176,10 +176,10 @@ body {
 
 @media (max-width: 768px) {
   .show-listing-div {
-    width: 10rem !important;
+    width: 19rem !important;
   }
   .show-listing-img {
-    height: 5rem !important;
+    height: 12rem !important;
   }
 }
 
