@@ -48,6 +48,9 @@ body {
   .nav-expansion {
     height: auto;
   }
+  .navbar-search {
+    display: none;
+  }
 }
 
 /* Filters */
