@@ -176,10 +176,10 @@ body {
 
 @media (max-width: 768px) {
   .show-listing-img {
-    width: 15rem;
+    width: 65vw;
   }
   .card-img-top {
-    height: 15rem;
+    height: 25vh;
   }
 }
 
